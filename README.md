@@ -72,10 +72,3 @@ Semua skrip interaktif membaca CSV yang sudah ada dan menawarkan pilihan mode. S
 2. `python 3_build_validation_gt.py` → pilih `U` → pilih satu foto → tunjukkan pemetaan bbox ke HOLE → `N` → jawab `n`.
 3. `python 4_ipm_eksperimen.py` → pilih `P` → pilih satu foto → titik lama dimuat, geser satu titik dan lihat BEV berubah → `C` → jawab `n`.
 
-Hasil pengukuran manual tidak akan persis sama dengan nilai di CSV, karena kotak referensi dan titik acuan diletakkan dengan tangan. Selisihnya biasanya kecil.
-
-## Catatan versi data
-
-- Konstanta kertas di versi lama `build_pothole_gt.py` keliru (10,5 × 14,85 cm). Di sini sudah 14,85 × 21,0 cm, dan `pothole_gt.csv` memakai nilai yang sudah benar.
-- `validation_gt.csv` dan `src_pts.csv` adalah versi final (folder `terbaru`): REAL_071 dan REAL_073 dipetakan ke HOLE_008, dan `bev_h` 13 foto `IMG_` di ruas 3,10 m sudah 968 px.
-- `update_src_pts.py` lama tidak dipakai lagi. Fungsinya digantikan mode `W` pada skrip 4, yang sekaligus menghitung ulang `bev_h`.
